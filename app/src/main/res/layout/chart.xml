@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chartheight">
+        <TextView
+            android:id="@+id/tv_day"
+            style="@style/charttab"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:elevation="50dp"
+            android:text="日视图"
+            />
+        <TextView
+            android:id="@+id/tv_week"
+            style="@style/charttab"
+            android:text="周视图"
+            />
+        <TextView
+            android:id="@+id/tv_month"
+            style="@style/charttab"
+            android:text="月视图"
+            />
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_chartPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+           </FrameLayout>
+
+</LinearLayout>

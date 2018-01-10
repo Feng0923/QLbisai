@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="labelHeight">50dp</dimen>
+    <dimen name="h">20dp</dimen>
+    <dimen name="l">80dp</dimen>
+    <integer name="row">20</integer>
+    <integer name="column">3</integer>
+    <dimen name="dropwidth">20dp</dimen>
+    <dimen name="labelheight">40dp</dimen>
+    <dimen name="labeleach">10dp</dimen>
+    <dimen name="chartheight">50dp</dimen>
+    <dimen name="charttextsize">20dp</dimen>
+    <dimen name="charthinttextsize">25dp</dimen>
+</resources>

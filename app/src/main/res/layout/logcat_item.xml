@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_weight="1.2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_fang"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:src="@mipmap/fang"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img_gou"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/gou"/>
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/item_ll"
+        android:layout_weight="10"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="18dp"
+                android:id="@+id/tv_message"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="8"/>
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="12dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_year"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:textSize="12dp"
+
+                    android:gravity="center_horizontal|center_vertical"
+                    android:id="@+id/tv_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:textSize="12dp"
+
+                    android:gravity="center_horizontal|center_vertical"
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray">
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

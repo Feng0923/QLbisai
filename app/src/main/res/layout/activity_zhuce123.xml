@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xxd.qlbisai.login.ZhuceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            tools:ignore="NestedWeights" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/SButton_return"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="back"
+                app:srcCompat="@mipmap/back2"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.7" />
+
+            <TextView
+                android:id="@+id/textView"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.8"
+
+
+                android:gravity="center_vertical"
+                android:text="验证"
+                android:textColor="#000000"
+                android:textSize="21.5dp"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.65"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@drawable/edit_bg">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    tools:ignore="NestedWeights" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+
+                    app:srcCompat="@mipmap/call12"
+                    tools:ignore="ContentDescription" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" />
+
+                <EditText
+
+                    android:id="@+id/editText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@null"
+                    android:textCursorDrawable="@null"
+                    android:numeric="integer"
+                    android:hint="手机号"
+                    android:inputType="number"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.65"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="13"
+                android:background="@drawable/edit_bg">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    tools:ignore="NestedWeights" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+
+                    app:srcCompat="@mipmap/yanzhengma"
+                    tools:ignore="ContentDescription" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" />
+
+                <EditText
+
+                    android:id="@+id/editText9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="12"
+                    android:background="@null"
+                    android:textCursorDrawable="@null"
+                    android:numeric="integer"
+                    android:hint="验证码"
+                    android:inputType="number"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/getcode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:background="@drawable/edit_bg"
+                android:onClick="getMa"
+                android:text="获取验证码"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.65"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@drawable/edit_bg">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    tools:ignore="NestedWeights" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+
+                    app:srcCompat="@mipmap/mima"
+                    tools:ignore="ContentDescription" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" />
+
+                <EditText
+
+                    android:id="@+id/editText3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:textCursorDrawable="@null"
+
+                    android:background="@null"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.65"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="注册即表示同意《Time用户协议》"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.75"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/Login_login123"
+                style="?android:phoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="3.5"
+
+                android:background="@drawable/shapefile1"
+                android:onClick="complete"
+                android:text="下一步，完善个人资料"
+
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

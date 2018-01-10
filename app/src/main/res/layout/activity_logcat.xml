@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/mu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/SButton_return"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="back"
+                app:srcCompat="@mipmap/back2"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2" />
+
+            <TextView
+                android:id="@+id/textView"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+
+
+                android:gravity="center_vertical"
+                android:text="我的日志"
+                android:textColor="#000000"
+                android:textSize="21dp"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage" />
+            <TextView
+                android:id="@+id/tv_finish"
+                android:layout_width="0dp"
+                android:textSize="21dp"
+                android:text="完成"
+                android:visibility="invisible"
+                android:textColor="#13ceeb"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:onClick="addLog"
+                android:id="@+id/tv_zengjia"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitEnd"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/zengjia"/>
+
+                <TextView
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="写日志"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:onClick="deleteLog"
+                android:id="@+id/tv_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitEnd"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/delete"/>
+
+                <TextView
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="删除日志"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray">
+        </LinearLayout>
+
+        <com.example.xxd.qlbisai.ui.RefleshListView.PullDownView
+            android:id="@+id/pdv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"></com.example.xxd.qlbisai.ui.RefleshListView.PullDownView>
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

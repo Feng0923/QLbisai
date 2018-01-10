@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.2"
+    useLibrary 'org.apache.http.legacy'
+
+
+    defaultConfig {
+        applicationId "com.example.xxd.qlbisai"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile 'cn.bmob.android:bmob-sdk:3.4.7-aar'
+//    compile 'com.android.support:recyclerview-v7:24.2.1'
+
+
+
+
+
+    //bmob-sms ：Bmob单独为短信服务提供的包
+    compile 'cn.bmob.android:bmob-sms:1.0.1'
+
+    //如果你想应用能够兼容Android6.0，请添加此依赖(org.apache.http.legacy.jar)
+    compile 'cn.bmob.android:http-legacy:1.0'
+
+    compile 'cn.carbswang.android:NumberPickerView:1.0.2'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+    testCompile 'junit:junit:4.12'
+}

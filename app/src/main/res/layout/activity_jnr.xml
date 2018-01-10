@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/background_light"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/big_bb"
+        android:src="@drawable/bb_0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="最美的记忆日"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:gravity="center|top" />
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="3">
+            <TextView
+                android:id="@+id/tv_day"
+                android:textSize="80dp"
+                android:textColor="#ffffff"
+                android:gravity="center|bottom"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:id="@+id/tv_discrip"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|top"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_jnr"
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></ListView>
+    </LinearLayout>
+    >
+
+    <ImageView
+        android:id="@+id/add_jnr"
+        android:layout_margin="20dp"
+        android:src="@mipmap/add_jnr"
+        android:layout_gravity="right|bottom"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+</FrameLayout>

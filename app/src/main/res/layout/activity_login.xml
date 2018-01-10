@@ -1,0 +1,479 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.xxd.qlbisai.login.LoginActivity">
+
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/returnandtheme"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+       >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Login_imageButton_return"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="back"
+                app:srcCompat="@mipmap/back2"
+                tools:ignore="ContentDescription" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+               />
+
+            <TextView
+                android:id="@+id/textView"
+
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+
+                android:text="登录"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+           />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+       />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="0dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+
+        app:srcCompat="@mipmap/time" />
+
+
+
+</LinearLayout>
+
+
+
+        <LinearLayout
+
+
+            android:id="@+id/email_login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical"
+
+                  >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+               />
+
+
+            <LinearLayout
+                android:id="@+id/try1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+
+
+
+
+                android:orientation="horizontal"
+                tools:ignore="RtlHardcoded">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                   />
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+
+
+                    app:srcCompat="@mipmap/phone"
+                    tools:ignore="ContentDescription" />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/Login_TextView_phone"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+
+                    android:background="@null"
+                    android:hint="您的手机号"
+                    android:textCursorDrawable="@null"
+
+                    android:textSize="15dp"
+                    android:inputType="number"
+
+                    android:maxLines="1"
+
+                    android:singleLine="true"
+                    tools:ignore="Deprecated,HardcodedText" />
+
+
+                <ImageButton
+                    android:id="@+id/Login_imageButton_phonedele"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="#00000000"
+
+
+                    android:onClick="dele"
+                    app:srcCompat="@mipmap/dele"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+                <View
+                    android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+                <View
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.5"
+                    android:background="#000000"
+
+
+
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="0.2"
+
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+
+                />
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+
+
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:layout_gravity="center"
+
+                        app:srcCompat="@mipmap/lock"
+                        tools:ignore="ContentDescription" />
+
+
+                    <EditText
+                        android:id="@+id/Login_EditText_password"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+
+
+                        android:background="@null"
+                        android:textCursorDrawable="@null"
+
+
+                        android:hint="您的账号密码"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="15dp"
+                        tools:ignore="Deprecated,HardcodedText,RtlHardcoded" />
+
+
+                    <ImageButton
+                        android:id="@+id/Login_imageButton_phonedele1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:background="#00000000"
+
+
+                        android:onClick="delet"
+                        app:srcCompat="@mipmap/dele"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <View
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:background="#000000"
+
+
+
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+               />
+        </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="1"
+
+
+
+                />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.8"
+    android:orientation="horizontal">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/Login_login"
+        style="?android:phoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+
+        android:background="@drawable/shapefile"
+        android:onClick="Login"
+
+        android:text="登录"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+</LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="0.32"
+
+
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    />
+
+                <Button
+                    android:id="@+id/Login_forget"
+                    style="?android:phoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+
+                    android:background="#00000000"
+                    android:onClick="forget"
+                    android:text="忘记密码?"
+                    android:textColor="#528B8B"
+                    android:textSize="11dp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                <Button
+                    android:id="@+id/Login_forget1"
+                    style="?android:phoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+
+                    android:background="#00000000"
+                    android:onClick="sigin"
+                    android:text="新用户注册"
+                    android:textColor="#528B8B"
+                    android:textSize="10.5dp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    />
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="0.7"
+
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+
+                android:text="——第三方登录——"
+                android:textSize="10dp"
+                tools:ignore="HardcodedText" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.5"></LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="1.2"
+
+                />
+            <!--<LinearLayout-->
+                <!--android:id="@+id/email_login_form"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="2.10"-->
+
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="1">-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/Login_third1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="80dp"-->
+                    <!--android:layout_marginRight="50dp"-->
+                    <!--android:background="#00000000"-->
+                    <!--app:srcCompat="@mipmap/ic_launcher"-->
+                    <!--tools:ignore="ContentDescription,RtlHardcoded" />-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/Login_third2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#00000000"-->
+                    <!--app:srcCompat="@mipmap/ic_launcher"-->
+                    <!--tools:ignore="ContentDescription" />-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+</LinearLayout>

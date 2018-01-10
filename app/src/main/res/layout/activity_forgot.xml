@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xxd.qlbisai.login.ForgetActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/SButton_return"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="back"
+                app:srcCompat="@mipmap/back2"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2" />
+
+            <TextView
+                android:id="@+id/textView"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.2"
+
+
+                android:gravity="center_vertical"
+                android:text="找回密码"
+                android:textColor="#000000"
+                android:textSize="21dp"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+            <EditText
+                android:id="@+id/change_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer"
+                android:hint="  输入手机号"
+                android:inputType="number"
+                android:textCursorDrawable="@null" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+            <EditText
+                android:id="@+id/change_ma"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="12"
+                android:background="@drawable/edit_bg"
+                android:hint="  输入验证码"
+                android:inputType="number"
+                android:numeric="integer"
+                android:textCursorDrawable="@null" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/Sendcode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/edit_bg"
+                android:onClick="getCode"
+                android:text="发送验证码" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+            <EditText
+                android:id="@+id/change_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@drawable/edit_bg"
+
+                android:hint="  输入新密码"
+                android:inputType="phone"
+                android:textCursorDrawable="@null" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/change_btn"
+                style="?android:phoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+
+                android:background="@drawable/shapefile1"
+                android:onClick="cgPassword"
+                android:text="确认提交"
+
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.3"
+        android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:showDividers="end">
+
+        <TextView
+            android:id="@+id/tv_colorOvl"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/affair" />
+
+        <TextView
+            android:id="@+id/tv_root"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="看电影"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_add_circle_outline_black_24dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:visibility="gone">
+
+    </ListView>
+    <LinearLayout
+        android:id="@+id/ll_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/affair" />
+        <EditText
+            android:id="@+id/et_add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:id="@+id/tv_enter"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:text="√"
+            android:textColor="@color/gray"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

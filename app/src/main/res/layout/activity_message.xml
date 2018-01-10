@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.xxd.qlbisai.ui.MessageActivity">
+
+
+        <LinearLayout
+            android:background="#ece7e2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/SButton_return"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="back"
+                app:srcCompat="@mipmap/back2"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2" />
+
+            <TextView
+                android:id="@+id/textView"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.2"
+
+
+                android:gravity="center_vertical"
+                android:text="个人信息"
+                android:textColor="#000000"
+                android:textSize="21dp"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage" />
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"></LinearLayout>
+    <LinearLayout
+        android:background="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="昵称"
+            android:textColor="#b0aeae"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/darker_gray"></LinearLayout>
+    <LinearLayout
+        android:background="@android:color/background_light"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="性别"
+            android:textColor="#b0aeae"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/darker_gray"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/background_light"
+
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="年龄"
+            android:textColor="#b0aeae"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/darker_gray"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/background_light"
+
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="生日"
+            android:textColor="#b0aeae"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_birthday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/background_light"
+
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="所在地"
+            android:textColor="#b0aeae"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"></LinearLayout>
+
+</LinearLayout>

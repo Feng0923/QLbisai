@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll_history"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_time"
+            android:textColor="#000000"
+            android:background="@android:color/background_light"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:textColor="#000000"
+            android:gravity="center"
+            android:id="@+id/tv_before"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+
+        <TextView
+            android:textColor="#000000"
+            android:gravity="center"
+            android:id="@+id/tv_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

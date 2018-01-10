@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chartheight"
+            android:orientation="horizontal">
+
+            <cn.carbswang.android.numberpickerview.library.NumberPickerView
+                android:id="@+id/np_year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:npv_ShowCount="1"
+                app:npv_HintText="年"
+                app:npv_WrapSelectorWheel="true"
+                app:npv_TextColorSelected="@color/colorAccent"
+                app:npv_TextColorHint="@color/colorAccent"
+                app:npv_TextSizeHint="@dimen/charthinttextsize"
+                app:npv_DividerColor="@color/colorAccent"
+                app:npv_TextSizeSelected="@dimen/charttextsize"
+                ></cn.carbswang.android.numberpickerview.library.NumberPickerView>
+
+            <cn.carbswang.android.numberpickerview.library.NumberPickerView
+                android:id="@+id/np_month"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/chartheight"
+                app:npv_WrapSelectorWheel="true"
+                app:npv_HintText="月"
+                app:npv_TextColorSelected="@color/colorAccent"
+                app:npv_TextColorHint="@color/colorAccent"
+                app:npv_TextSizeHint="@dimen/charthinttextsize"
+                app:npv_DividerColor="@color/colorAccent"
+                app:npv_ShowCount="1"
+                app:npv_TextSizeSelected="@dimen/charttextsize"
+                android:layout_weight="1"></cn.carbswang.android.numberpickerview.library.NumberPickerView>
+
+            <cn.carbswang.android.numberpickerview.library.NumberPickerView
+                android:id="@+id/np_day"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/chartheight"
+                app:npv_WrapSelectorWheel="true"
+                app:npv_TextColorSelected="@color/colorAccent"
+                app:npv_TextColorHint="@color/colorAccent"
+                app:npv_DividerColor="@color/colorAccent"
+                app:npv_ShowCount="1"
+                app:npv_HintText="日"
+                app:npv_TextSizeHint="@dimen/charthinttextsize"
+                app:npv_TextSizeSelected="@dimen/charttextsize"
+                android:layout_weight="1">
+            </cn.carbswang.android.numberpickerview.library.NumberPickerView>
+
+        </LinearLayout>
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart_pie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.github.mikephil.charting.charts.PieChart>
+    </LinearLayout>
+</RelativeLayout>

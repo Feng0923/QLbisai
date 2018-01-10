@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/history_lv"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="没有记录"
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:textColor="#28bbf5"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
